@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+
+:root{
+    --bgcolor: #D79922;
+    --text: #615B45;
+
+    --primary: #D79922;
+    --secondary: #EFE2BA;
+    --orange: #F13C20;
+    --deepblue: #4056A1;
+    --lightblue: #C5CBE3;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.fa-icon-before:before{
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+    vertical-align: middle; /* Vertikale Zentrierung */
+}
+
+#uni:before {
+    padding-right: 1rem;
+    content: '\f508'
+}
+#work:before{
+    padding-right: 10px;
+    font: var(--fa-font-solid);
+    content: '\f0b1'
+}
+#fh:before{
+    padding-right: 1rem;
+    font: var(--fa-font-solid);
+    content: '\f19c'
+}
+
+#running:before{
+    background-image: url("/pictures/svg/person-running-solid.svg");
+
+}
+#bike:before {
+    background-image: url("/pictures/svg/bicycle-solid.svg");
+}
+
+#swim:before {
+    background-image: url("/pictures/svg/person-swimming-solid.svg");
+}
+#dlrg:before {
+    background-image: url("/pictures/svg/heart-pulse-solid.svg");
+}
+#geek:before {
+    background-image: url("/pictures/svg/robot-solid.svg");
+}
+#scrolldown{
+    width: 30px;
+    visibility: hidden;
+    padding: 10px 0 10px 0;
+}
+
+#scroll_icon{
+    text-align: center;
+    left: -30px;
+}
+
+#test{}
+
+#hobbiesList{
+    text-align: left;
+    padding-left: 2rem;
+}
+
+#name {
+    text-decoration: none;
+    background: linear-gradient(currentColor, currentColor) bottom / 0 .1em no-repeat;
+    transition: 1s background-size;
+    margin-bottom: 10px;
+
+}
+#name:hover {
+    background-size: 100% .1em;
+}
+
+.headerh1{
+    text-align: center;
+    color: var(--deepblue);
+    margin-top: 1rem;
+}
+
+.item{
+    position: relative;
+    display: flex;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    padding: 15px;
+    margin-bottom: 1rem;
+    color: var(--primary);
+
+}
+
+#cvItem {
+    background-color: var(--lightblue);
+}
+
+#bikeItem {
+    background-color: var(--secondary);
+}
+
+#emptyItem{
+    background-color: var(--deepblue);
+}
+.link-icon {
+    position: absolute;
+    right: 5%;
+    bottom: 30%;
+}
+.container{
+    padding-top: 5%;
+}
+
+.hero-image{
+    background-image: url("/pictures/hero-img.jpeg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 5px;
+}
+
+.main{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1rem;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+    font-weight: 600;
+    background-color: rgba(65,65,65,0.4);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    color: var(--secondary);
+}
+
+.headline{
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--deepblue);
+    font-weight: 700;
+}
+
+#welcomeText{
+    font-weight: 500;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    .container .item div{
+        width: 100px !important;
+    }
+    #scrolldown{
+        visibility: visible;
+    }
+
+}
+#mainGrid{
+    height: 95%;
+    width: 100%;
+    padding:0;
+}
+#leftSide{
+    background-color: var(--lightblue);
+    height: 100%;
+    text-align: center;
+}
+
+#cvBackgroundRow{
+    height: 100%;
+}
+
+#profile {
+    width:70%;
+    border-radius: 50%;
+    position: relative;
+    top: 1rem;
+}
+
+#profession{
+    height: 150%;
+}
+
+.verticalTextalign{
+    vertical-align: center !important;
+}
+.horizontalTextalign{
+    text-align: center !important;
+}
+
+.verticalTextalign h3{
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+    margin-right: 0.5rem !important;
+    margin-left: 0.5rem !important;
+}
+#professionTable{
+    margin-left: 1rem !important;
+}
+.cvTable{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+.headlineCV{
+    margin-top: 1rem;
+    color: var(--deepblue);
+}
+.dateCol{
+    width: 30%;
+}
+.typewriter{
+    display: inline-block;
+
+}
+
+.typewriter h1 {
+    overflow: hidden;
+    border-right: .15em solid var(--orange); /* The typwriter cursor */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .10em; /* Adjust as needed */
+    animation:
+            typing 2s steps(20, end),
+            blink-caret .6s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+#heightdiv{
+    height: 80%;
+    text-align: center;
+    color: var(--orange);
+}

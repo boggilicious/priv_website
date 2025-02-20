@@ -1,0 +1,52 @@
+/* Here is all regarding the Header*/
+#header-div {
+    text-align: center;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--primary);
+    background-color: var(--secondary);
+
+}
+.icons{
+    padding-bottom: 0.5rem;;
+}
+#socials{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#socials td {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a , a:focus, a:active {
+    text-decoration: none !important;
+    color: var(--primary) !important;
+}
+
+
+/*Colors*/
+#email:hover i {
+    color: tomato !important;
+}
+
+#instagram:hover i{
+    color:purple;
+}
+
+#spotify:hover i{
+    color:forestgreen;
+}
+#strava:hover i{
+    color:tomato;
+}
+#linkedin:hover i{
+    color:darkblue;
+}
+#paypal:hover i{
+    color:darkblue;
+}
+
